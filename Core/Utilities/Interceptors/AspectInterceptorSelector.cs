@@ -18,6 +18,8 @@ namespace Core.Utilities.Interceptors
                 .GetCustomAttributes<MethodInterceptionBaseAttribute>(true);
             classAttributes.AddRange(methodAttributes);
 
+            //PerformanceAspect buraya eklenirse bütün metotlara etki eder 
+
             return classAttributes.OrderBy(x => x.Priority).ToArray();
         }
     }

@@ -18,20 +18,20 @@ namespace ConsoleUI
             //    Console.WriteLine(category.CategoryName);
             //}
 
-            ProductManager productManager = new ProductManager(new EfProductDal());
+            //ProductManager productManager = new ProductManager(new EfProductDal());
 
-            var result = productManager.GetProductDetails();
+            //var result = productManager.GetProductDetails();
 
-            if (result.Success == true) {
-                foreach (var product in result.Data)
-                {
-                    Console.WriteLine(product.ProductName + "/" + product.CategoryName);
-                }
-            }
-            else
-            {
-                Console.WriteLine(result.Message);
-            }
+            //if (result.Success == true) {
+            //    foreach (var product in result.Data)
+            //    {
+            //        Console.WriteLine(product.ProductName + "/" + product.CategoryName);
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine(result.Message);
+            //}
             //foreach (var product in productManager.GetAllByCategoryId(2))
             //{
             //    Console.WriteLine(product.ProductName);
